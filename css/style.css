@@ -1,0 +1,226 @@
+
+/* top Styles
+---------------------------------*/
+.top_content{
+	/*position: relative;*/
+	width: 99%;
+	padding: 0px 0 30px 0px;
+	position: fixed;
+	z-index: 100;
+	border-radius: 20px;
+	text-align: right;
+	}
+	
+.logo{
+	float:left;
+	margin: 20px 0 0 30px;
+	}
+/* Nav Styles
+---------------------------------*/
+div.top_content {
+    background: rgba(100, 100, 100, 0.4);
+}
+.nav{
+	float:right;
+	margin-top: 20px;
+	}
+.nav ul{
+	list-style:none;
+	padding-right: 7%;
+	}	
+.nav ul li{
+	display:inline-block;
+	margin:0 23px;
+	}
+.nav ul li a{
+	display:block;
+	font-size:30px;
+	color:black;
+	font-family: 'Indie Flower', cursive;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight: 600;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;	
+	}
+.nav ul li a:hover{
+	color:#49b5e7 ;
+	}
+
+/* home Styles
+---------------------------------*/
+#home{
+	background:#f9f9f9;
+	position:auto;
+	}
+.home_content{
+	position:relative;
+	padding-top: 180px;
+	padding-bottom: 200px;
+	text-align: center;
+	}
+.home_content h3{
+	font-size:30px;
+	color:#f56eab;
+	margin:0 40px 20px 0;
+	font-family: 'Indie Flower', cursive;
+	font-weight: 700;
+	}	
+.home_content h2{
+	font-size:40px;
+	color:#111111;
+	line-height: 52px;
+	margin:0 0 26px 0;
+	font-family: 'Indie Flower', cursive;
+	font-weight:700;
+	}
+	
+.home_content p{
+	font-size:20px;
+	color:#888888;
+	margin:0 0 30px 0;
+	line-height: 26px;
+	font-family: 'Indie Flower', cursive;
+	}
+a.facebook{
+	font-family: 'Dosis';
+	display:inline-block;
+	font-size:16px;
+	color:#ffffff;
+	background:#345391;
+	width:178px;
+	height:46px;
+	line-height:46px;
+	border-radius:3px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	}
+a.facebook:hover{
+	background:#222222;
+	}
+a.instagram{
+	font-family: 'Dosis';
+	display:inline-block;
+	font-size:16px;
+	color:#ffffff;
+	background:#946358;
+	width:178px;
+	height:46px;
+	line-height:46px;
+	border-radius:3px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	}
+a.instagram:hover{
+	background:#222222;
+	}
+
+
+/* life Styles
+---------------------------------*/
+
+#life{
+	/*padding: 100px 0 10px 0;*/
+	padding-top: 10%;
+	padding-bottom: 20%;
+
+	}
+#life h2{
+	font-size: 40px;
+	padding-left: 40px;
+	font-family: 'Indie Flower', cursive;
+	}
+.life_content{
+	padding: 0px 0 80px 0; 
+	}
+.life_block{
+	padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+	}
+.life_block table{
+	text-align: center;
+	}
+.life_block h3{
+	font-family: 'Indie Flower', cursive;
+	font-weight: 600;
+	font-size:30px;
+	color:#111111;
+	margin:35px 0 18px;
+	}
+.life_block td a{
+	text-decoration: none;
+}
+.life_block p{
+	font-size:16px;
+	color:#888888;
+	margin:0px;
+	}
+/* Photo Styles
+---------------------------------*/
+#photo{
+	padding-top: 10%;
+	background:#f9f9f9;
+	padding-bottom: 20%;
+	}
+#photo h2{
+	font-size: 40px;
+	padding-left: 40px;
+	font-family: 'Indie Flower', cursive;
+	}
+.photo_content{
+	padding:0 0px 340px 0 ;
+	}
+.photo_content img{
+	max-width: 100%;
+	width: auto;
+	display: inline-block;
+	margin: 10px;
+	border:3px solid brown;
+	}
+
+/* Contact Styles
+---------------------------------*/
+#contact{
+	padding-top: 10%;
+	padding-bottom: 30%;
+	}
+#contact h2{
+	font-size: 40px;
+	padding-left: 40px;
+	font-family: 'Indie Flower', cursive;
+	}
+.contact_content{
+	padding:0 0 200px 0;	
+	}
+.contact_block{
+	padding-left: 200px;
+	}
+.contact_block p{
+	font-size: 20px;
+	font-family: 'Indie Flower', cursive;
+	text-align: center;
+	}
+.contact_block table{
+	text-align: center;
+}
+
+/* bottom
+---------------------------------------*/
+.bottom{
+	text-align: center;
+	color: gray;
+	font-size: 15px;
+	font-family: 'Indie Flower', cursive;
+}	
