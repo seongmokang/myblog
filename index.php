@@ -1,4 +1,14 @@
-<!doctype html>
+<?php
+    require_once($_SERVER["DOCUMENT_ROOT"] ."/myblog/common/dbconfig.php");
+    $db = mysqli_connect($db_host,$db_user,$db_passwd,$db_name);
+    if($db){
+        echo 'success';
+    }else{
+        echo 'fail';
+    }
+    echo "end";
+?>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -41,6 +51,7 @@
           <li><a href="#home" class="nav-button">Home</a></li>
           <li><a href="#life" class="nav-button">Life</a></li>
           <li><a href="#photo" class="nav-button">Photo</a></li>
+          <li><a href="#board" class="nav-button">Board</a></li>
           <li><a href="#contact" class="nav-button">Contact</a></li>
         </ul>
       </nav>
@@ -106,11 +117,12 @@
             </td>
             <td>
               <h3>Work Experience</h3>
-              <p>not yet...</p>
+              <p>FeelingTV.inc - 16.07~16.08</p>
+              <p>Rgpkroea.Ltd - 16.09~now</p>
             </td>
             <td>
               <h3>Dream</h3>
-              <p>I want to be a Presales manager</p>
+              <p>Developer</p>
               <p>World Travel</p>
               <p>Preasent Life</p>
             </td>

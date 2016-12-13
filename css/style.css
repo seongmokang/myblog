@@ -26,11 +26,11 @@ div.top_content {
 	}
 .nav ul{
 	list-style:none;
-	padding-right: 7%;
+	padding-right: 7px;
 	}	
 .nav ul li{
 	display:inline-block;
-	margin:0 23px;
+	margin:0px 23px;
 	}
 .nav ul li a{
 	display:block;
