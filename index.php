@@ -1,12 +1,18 @@
 <?php
     require_once($_SERVER["DOCUMENT_ROOT"] ."/myblog/common/dbconfig.php");
-    $db = mysqli_connect($db_host,$db_user,$db_passwd,$db_name);
+    $db = mysqli_connect($db_host,$db_user,$db_passwd);
     if($db){
         echo 'success';
     }else{
         echo 'fail';
     }
     echo "end";
+    $sql ="CREATE TABLE Persons(FirstName char(30), LastName char(30), Age INT)";
+    if(mysqli_query($db,$sql)){
+        echo 'success';
+    }else{
+        echo 'fail';
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -21,7 +27,7 @@
   <!--Javascript-->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.3.min.js"></script> <!--jquery 기본 동작을 위한 Js URL-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-
+  <script src="./js/vue.js"></script>
   <script type="text/javascript">
   $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -38,9 +44,41 @@
   });
 });
   </script>
+  <script type="text/x-template" id="grid-template">
+    <table>
+      <thead>
+      <tr>
+        <th v-for="key in columns"
+            @click="sortBy(key)"
+            :class="{ active: sortKey == key }">
+          {{ key | capitalize }}
+          <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
+          </span>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr v-for="entry in filteredData">
+        <td v-for="key in columns">
+          {{entry[key]}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </script>
 </head>
 
 <body>
+<div id="demo">
+    <form id="search">
+        Search <input name="query" v-model="searchQuery">
+    </form>
+    <demo-grid
+        :data="gridData"
+        :columns="gridColumns"
+        :filter-key="searchQuery">
+    </demo-grid>
+</div>
 <!--Top_section // 타이틀과 메뉴-->
 <header id="top_outer">
     <div class="top_content">
@@ -190,7 +228,7 @@
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.js"></script>
-
+<script src="Vue.js"></script>
 <script type="text/javascript" src="js/css3-animate-it.js"></script> <!-- css3의 각종 애니메이션 동작을 위한 js파일-->
 
 </body>
